@@ -3,19 +3,16 @@ package com.mrright.users.ui
 import android.os.Bundle
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
-import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.mrright.users.adapters.UserAdapter
 import com.mrright.users.databinding.ActivityMainBinding
 import com.mrright.users.models.User
 import com.mrright.users.utils.*
-import com.mrright.users.viewmodels.UserStateViewModel
 import com.mrright.users.viewmodels.UserViewModel
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.delay
-import kotlinx.coroutines.flow.collect
 
 @ExperimentalCoroutinesApi
 private val LOG = MainActivity::class.java.simpleName
